@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.5.x" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js" data-semver="1.5.11"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <p>Hello {{name}}!</p>
+    <div ng-repeat="g in sampleObject">
+      <my-graph graph-name="g.name"></my-graph>
+    </div>
+  </body>
+
+</html>
